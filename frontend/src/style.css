@@ -195,9 +195,10 @@ input[type="text"]:focus {
     overflow: hidden;
     margin: 10px 0;
     position: relative;
-    width: 100%; /* Pastikan container mengambil lebar penuh */
-    display: block; /* Pastikan elemen ditampilkan sebagai block */
-    z-index: 1; /* Pastikan container memiliki z-index */
+    width: 100%;
+    min-width: 200px; 
+    display: block; 
+    z-index: 1; 
 }
 
 .progress-bar {
@@ -208,15 +209,16 @@ input[type="text"]:focus {
     position: absolute;
     left: 0;
     top: 0;
-    min-width: 5px; /* Minimal width agar terlihat */
+    min-width: 5px;
     will-change: width;
-    z-index: 2; /* Pastikan progress bar di atas container */
-    display: block; /* Pastikan elemen ditampilkan sebagai block */
+    z-index: 2;
+    display: block;
 }
 
 .download-actions {
     display: flex;
     gap: 10px;
+    margin-left: 10px;
 }
 
 .btn.small {
